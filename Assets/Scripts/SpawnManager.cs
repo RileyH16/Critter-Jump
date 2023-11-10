@@ -1,77 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public enum Direction { Left = -1, Right = 1 };
-
-    public bool randomizeValues = false;
-
-    public Direction direction;
-    public float speed = 15.0f;
-    public float interval = 1.5f;
-    public float leftX = -20.0f;
-    public float rightX = 20.0f;
-
+    private float startDelay = 3;
+    private float repeatRate = 3;
     public GameObject[] carPrefabs;
-
-    private float elapsedTime;
+    private Vector3 leftSpawn = new Vector3(-45.0f, 0.9f, -2.2f);
+    private Vector3 rightSpawn = new Vector3(45.0f, 0.9f, 2.0f);
+    
 
     private List<GameObject> Enemy;
 
     // Start is called before the first frame update
     public void Start()
     {
-        if (randomizeValues)
-        {
-            direction = Random.value < 0.5f ? Direction.Left : Direction.Right;
-            speed = Random.Range(2.0f, 4.0f);
-            interval = Random.Range(5.0f, 9.0f);
-        }
-
-        elapsedTime = 0.0f;
+        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
         Enemy = new List<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        elapsedTime += Time.deltaTime;
-
-        if (elapsedTime > interval)
-        {
-            elapsedTime = 0.0f;
-
-            // TODO extract 0.375f and -0.5f to outside -- probably along with genericization
-            var position = transform.position + new Vector3(direction == Direction.Left ? rightX : leftX, 0.6f, 0);
-            var o = (GameObject)Instantiate(carPrefabs[Random.Range(0, carPrefabs.Length)], position, Quaternion.Euler(0, 90, 0));
-            o.GetComponent<CarScript>().speedX = (int)direction * speed;
-
-            if (direction < 0)
-                o.transform.rotation = Quaternion.Euler(0, 270, 0);
-            else
-                o.transform.rotation = Quaternion.Euler(0, 90, 0);
-
-            Enemy.Add(o);
-        }
-
-        foreach (var o in Enemy.ToArray())
-        {
-            if (direction == Direction.Left && o.transform.position.x < leftX || direction == Direction.Right && o.transform.position.x > rightX)
-            {
-                Destroy(o);
-                Enemy.Remove(o);
-            }
-        }
+        
     }
 
-    public void OnDestroy()
+    void SpawnObstacle()
     {
-        foreach (var o in Enemy)
-        {
-            Destroy(o);
-        }
+        int randomCar = Random.Range(0, carPrefabs.Length);
+        Instantiate(carPrefabs[randomCar], leftSpawn, carPrefabs[randomCar].transform.rotation);
+        Instantiate(carPrefabs[randomCar], rightSpawn, Quaternion.Euler(0, -90, 0));
     }
 
 }

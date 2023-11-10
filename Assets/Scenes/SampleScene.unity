@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -540576830247600520, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
@@ -153,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalPosition.z
@@ -554,6 +558,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292928448873590, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54011750179816588, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,12 +618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea06a99a901d6946a6bd6245fa6dc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomizeValues: 0
-  direction: 0
-  speed: 15
-  interval: 1
-  leftX: -20
-  rightX: 20
   carPrefabs:
   - {fileID: 2097171835623687096, guid: 58f3cf06507b6d94d994f3764c893447, type: 3}
   - {fileID: 4806977130627821905, guid: ff29a04a8c7daa045aaec752f7bb749e, type: 3}
@@ -698,8 +704,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  jumpForce: 300
-  timeBeforeNextJump: 1.2
 --- !u!4 &1826152549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4292928448873590, guid: aa3784adb6428184e991be2d60ee0cb2, type: 3}
@@ -721,6 +725,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -540576830247600520, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
@@ -735,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 1628365242170048398, guid: 93ac5cda0cfab02448a24b2d24705845, type: 3}
       propertyPath: m_LocalPosition.z

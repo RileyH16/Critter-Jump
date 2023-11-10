@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 1450839346017387348}
   - component: {fileID: 6152943026806122048}
   - component: {fileID: -4834968248410258280}
+  - component: {fileID: 5897634960879700659}
   m_Layer: 0
   m_Name: Citroeen_Xsaara_WRC
   m_TagString: Enemy
@@ -355,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4806977130627821905}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -25.24, y: 1.9, z: -8.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -363,7 +364,7 @@ Transform:
   - {fileID: 1115329328689028293}
   - {fileID: 8347193614218585787}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &6152943026806122048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -411,7 +412,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &5897634960879700659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4806977130627821905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a8e42ad5786ea489c763bfcf83502a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 10
 --- !u!1 &4835994060453461210
 GameObject:
   m_ObjectHideFlags: 0

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 968347899535329674}
   - component: {fileID: -4467635988795806789}
   - component: {fileID: -4663159196662841850}
+  - component: {fileID: -2074457593097678731}
   m_Layer: 0
   m_Name: Moris_Mini_Cooper
   m_TagString: Enemy
@@ -58,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975563603937033805}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -10.23, y: 1.9, z: -8.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +67,7 @@ Transform:
   - {fileID: 1776461550706034713}
   - {fileID: 5423075284019685959}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &-4467635988795806789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114,7 +115,20 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
+--- !u!114 &-2074457593097678731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975563603937033805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a8e42ad5786ea489c763bfcf83502a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 10
 --- !u!1 &1388077960232510558
 GameObject:
   m_ObjectHideFlags: 0

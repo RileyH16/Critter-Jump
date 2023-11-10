@@ -5,8 +5,10 @@ using UnityEngine;
 public class CarScript : MonoBehaviour
 {
 
-    public float speedX = 1.0f;
+    public float speedX = 30.0f;
     private Rigidbody playerBody;
+    private float rightBound = 50.0f;
+    private float leftBound = -50.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,17 +19,27 @@ public class CarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(speedX * Time.deltaTime, 0.0f, 0.0f);
+        transform.Translate(Vector3.forward * Time.deltaTime * speedX);
+
+        if (transform.position.x > rightBound && gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+
+        else if (transform.position.x < leftBound && gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         // When collide with player, flatten it!
         if (other.gameObject.tag == "Player")
         {
             Vector3 scale = other.gameObject.transform.localScale;
             other.gameObject.transform.localScale = new Vector3(scale.x, scale.y * 0.1f, scale.z);
-            other.gameObject.SendMessage("GameOver");
+            Debug.Log("GameOver");
         }
     }
 }

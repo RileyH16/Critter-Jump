@@ -6,9 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 
     public float movementSpeed = 3;
-    public float jumpForce = 300;
-    public float timeBeforeNextJump = 1.2f;
-    private float canJump = 0f;
     Animator anim;
     Rigidbody rb;
     
@@ -41,11 +38,6 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
 
-        if (Input.GetButtonDown("Jump") && Time.time > canJump)
-        {
-                rb.AddForce(0, jumpForce, 0);
-                canJump = Time.time + timeBeforeNextJump;
-                anim.SetTrigger("jump");
-        }
+       
     }
 }
