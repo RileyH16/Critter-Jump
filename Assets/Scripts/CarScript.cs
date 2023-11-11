@@ -5,10 +5,10 @@ using UnityEngine;
 public class CarScript : MonoBehaviour
 {
 
-    public float speedX = 30.0f;
+    public float speedX = 50.0f;
     private Rigidbody playerBody;
-    private float rightBound = 50.0f;
-    private float leftBound = -50.0f;
+    private float rightBound = 40.0f;
+    private float leftBound = -40.0f;
 
     // Start is called before the first frame update
     void Start()

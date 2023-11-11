@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float startDelay = 3;
-    private float repeatRate = 3;
+    private float startDelay = 1.0f;
+    private float spawnInterval = 1.0f;
     public GameObject[] carPrefabs;
-    private Vector3 leftSpawn = new Vector3(-45.0f, 0.9f, -2.2f);
-    private Vector3 rightSpawn = new Vector3(45.0f, 0.9f, 2.0f);
+    private Vector3 leftSpawn1 = new Vector3(-35.0f, 0.9f, -2.2f);
+    private Vector3 leftSpawn2 = new Vector3(-35.0f, 0.9f, 17.7f);
+    private Vector3 rightSpawn1 = new Vector3(35.0f, 0.9f, 2.0f);
+    private Vector3 rightSpawn2 = new Vector3(35.0f, 0.9f, 21.9f);
     
 
     private List<GameObject> Enemy;
@@ -17,7 +19,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
+        Invoke("SpawnObstacle", startDelay);
         Enemy = new List<GameObject>();
     }
 
@@ -29,9 +31,18 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnObstacle()
     {
+        spawnInterval = Random.Range(0.75f, 1.0f);
+
         int randomCar = Random.Range(0, carPrefabs.Length);
-        Instantiate(carPrefabs[randomCar], leftSpawn, carPrefabs[randomCar].transform.rotation);
-        Instantiate(carPrefabs[randomCar], rightSpawn, Quaternion.Euler(0, -90, 0));
+
+        Instantiate(carPrefabs[randomCar], leftSpawn1, carPrefabs[randomCar].transform.rotation);
+        Instantiate(carPrefabs[randomCar], rightSpawn1, Quaternion.Euler(0, -90, 0));
+
+        Instantiate(carPrefabs[randomCar], leftSpawn2, carPrefabs[randomCar].transform.rotation);
+        Instantiate(carPrefabs[randomCar], rightSpawn2, Quaternion.Euler(0, -90, 0));
+
+        Invoke("SpawnObstacle", spawnInterval);
+
     }
 
 }

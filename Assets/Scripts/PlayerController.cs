@@ -18,6 +18,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         ControllPlayer();
+
+        if(transform.position.x <= -10)
+        {
+            transform.position = new Vector3(-10, transform.position.y, transform.position.z);
+        }
+
+        else if (transform.position.x >= 10)
+        {
+            transform.position = new Vector3(10, transform.position.y, transform.position.z);
+        }
+
     }
 
     void ControllPlayer()
