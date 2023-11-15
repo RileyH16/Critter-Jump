@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CarScript : MonoBehaviour
     private Rigidbody playerBody;
     private float rightBound = 40.0f;
     private float leftBound = -40.0f;
+    public float waitTime = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,13 @@ public class CarScript : MonoBehaviour
             Vector3 scale = other.gameObject.transform.localScale;
             other.gameObject.transform.localScale = new Vector3(scale.x, scale.y * 0.1f, scale.z);
             Debug.Log("GameOver");
+            StartCoroutine(WaitCoroutine());
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+    }
+
+    IEnumerator WaitCoroutine()
+    {
+        yield return new WaitForSeconds(2);
     }
 }

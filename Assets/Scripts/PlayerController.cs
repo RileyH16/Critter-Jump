@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float movementSpeed = 3;
     Animator anim;
     Rigidbody rb;
+    public PlayerController playerController;
+    public Dead dead;
     
     void Start()
     {
@@ -27,6 +30,11 @@ public class PlayerController : MonoBehaviour
         else if (transform.position.x >= 10)
         {
             transform.position = new Vector3(10, transform.position.y, transform.position.z);
+        }
+
+        else if (transform.position.z <= -24)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -24);
         }
 
     }
@@ -49,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
 
-       
     }
+
+   
 }
