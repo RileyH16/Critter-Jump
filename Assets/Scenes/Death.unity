@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU DIED!
+  m_text: Game Over!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26fbd66279c0d7f48a668be9a06bae04, type: 2}
   m_sharedMaterial: {fileID: 8561810808425545936, guid: 26fbd66279c0d7f48a668be9a06bae04, type: 2}
