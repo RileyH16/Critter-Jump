@@ -10,7 +10,7 @@ public class CarScript : MonoBehaviour
     private Rigidbody playerBody;
     private float rightBound = 40.0f;
     private float leftBound = -40.0f;
-    public float waitTime = 1.5f;
+    public float waitTime = 2f;
     private bool gameOver = false;
 
     // Start is called before the first frame update
@@ -50,9 +50,10 @@ public class CarScript : MonoBehaviour
             Vector3 scale = other.gameObject.transform.localScale;
             other.gameObject.transform.localScale = new Vector3(scale.x, scale.y * 0.1f, scale.z);
             Debug.Log("GameOver");
-            
             gameOver = true;
-            
+            PlayerController moveScript;
+            moveScript = other.gameObject.GetComponent<PlayerController>();
+            moveScript.canMove = false;
         }
     }
 

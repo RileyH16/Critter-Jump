@@ -11,18 +11,27 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     public PlayerController playerController;
     public Dead dead;
+    public bool canMove;
     
     void Start()
     {
+        canMove = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        ControllPlayer();
+        if (canMove)
+        {
+            ControllPlayer();
+        }
+        else if (anim != null)
+        {
+            anim.enabled = false;
+        }
 
-        if(transform.position.x <= -10)
+        if (transform.position.x <= -10)
         {
             transform.position = new Vector3(-10, transform.position.y, transform.position.z);
         }
