@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float startDelay = 1.0f;
+    private float startDelay = 0f;
     private float spawnInterval = 1.0f;
     public GameObject[] carPrefabs;
     private Vector3 leftSpawn1 = new Vector3(-35.0f, 0.9f, -2.2f);
@@ -29,6 +29,8 @@ public class SpawnManager : MonoBehaviour
     {
         
     }
+
+    
 
     void SpawnObstacle()
     {
