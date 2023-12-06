@@ -14,7 +14,11 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(player != null)
+        {
         transform.position = player.transform.position + new Vector3(0, 11f, -7.5f);
         transform.rotation = Quaternion.Euler(new Vector3(50, 0, 0));
+        }
+        
     }
 }

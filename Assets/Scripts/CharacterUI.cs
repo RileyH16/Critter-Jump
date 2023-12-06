@@ -25,7 +25,7 @@ public class CharacterUI : MonoBehaviour
                 selectedCharacter = option.transform;
             });
 
-            Image image = option.GetComponentInChildren<Image>();
+            Image image = option.transform.GetChild(0).GetComponent<Image>();
             image.sprite = c.icon;
         }
     }
@@ -39,7 +39,7 @@ public class CharacterUI : MonoBehaviour
 
         if (prevCharacter != null)
         {
-            selectedCharacter.localScale = Vector3.Lerp(selectedCharacter.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 10);
+           prevCharacter.localScale = Vector3.Lerp(prevCharacter.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 10);
         }
     }
 }
