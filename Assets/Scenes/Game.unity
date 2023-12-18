@@ -969,63 +969,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1666153020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1666153021}
-  - component: {fileID: 1666153022}
-  m_Layer: 0
-  m_Name: Spawn Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1666153021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666153020}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.79, y: 2.37, z: 2.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1666153022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666153020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea06a99a901d6946a6bd6245fa6dc99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefabs:
-  - {fileID: 2097171835623687096, guid: 58f3cf06507b6d94d994f3764c893447, type: 3}
-  - {fileID: 4806977130627821905, guid: ff29a04a8c7daa045aaec752f7bb749e, type: 3}
-  - {fileID: 7237713282788612360, guid: cf1d9fea0f92c624187bda1a77f463a7, type: 3}
-  - {fileID: 5711724946545205181, guid: 88445c5d03ad1b54e9eda590fdb47068, type: 3}
-  - {fileID: 3917628822746050706, guid: 9ed223fc2ac88e841b53ffaed17a174c, type: 3}
-  - {fileID: 975563603937033805, guid: ed39fd8ba51784a419d086d33a9ef843, type: 3}
-  - {fileID: 6481091178426754624, guid: b9a0c3045450ec742ba6d32778abc7af, type: 3}
-  - {fileID: 8260384996104088117, guid: e239a70de43bf1e468a0208c85b3389e, type: 3}
-  - {fileID: 5352559536369042497, guid: 7f565239b7c6a154082efd7bcdc514fc, type: 3}
-  - {fileID: 4808238751460401466, guid: 84143586fe4856f459c0d902e3a93604, type: 3}
-  rightSpawn: {fileID: 0}
-  leftSpawn: {fileID: 0}
 --- !u!1 &1706670503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1279,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 1666153021}
   - {fileID: 252562373}
   - {fileID: 823954365}
   - {fileID: 1706670504}

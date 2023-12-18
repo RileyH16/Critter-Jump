@@ -32,12 +32,12 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnObstacle()
     {
-        spawnInterval = Random.Range(0.75f, 1.0f);
+        spawnInterval = Random.Range(0.8f, 2f);
 
         int randomCar = Random.Range(0, carPrefabs.Length);
 
-        Instantiate(carPrefabs[randomCar], transform.position, carPrefabs[randomCar].transform.rotation);
-        Instantiate(carPrefabs[randomCar], transform.position, Quaternion.Euler(0, -90, 0));
+        Instantiate(carPrefabs[randomCar], leftSpawn.position, carPrefabs[randomCar].transform.rotation);
+        Instantiate(carPrefabs[randomCar], rightSpawn.position, Quaternion.Euler(0, -90, 0));
 
         Invoke("SpawnObstacle", spawnInterval);
 
