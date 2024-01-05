@@ -24,9 +24,9 @@ public class RoadManager : MonoBehaviour
     {
         for (int i = 0; i < numberOfRoads; i++)
         {
-            roadLength = Random.Range(13.5f, 19);
+            
             GameObject roadPrefab = roadPrefabs[Random.Range(0, roadPrefabs.Length)];
-            GameObject road = Instantiate(roadPrefab, new Vector3(-30, -0.4f, i * roadLength), roadPrefab.transform.rotation, transform);
+            GameObject road = Instantiate(roadPrefab, new Vector3(-30, -0.4f, i * roadLength), roadPrefab.transform.rotation);
             roadInstances.Add(road);
 
         }
@@ -36,11 +36,11 @@ public class RoadManager : MonoBehaviour
 
     public void ReplaceRoad(Transform road)
     {
-        roadLength = Random.Range(13.5f, 19);
+        
         numberOfRoads++;
         // Destroy the oldest road
         GameObject oldRoad = roadInstances[0];
-        road.position = new Vector3(0, 0, (numberOfRoads - 1) * roadLength);
+        road.localPosition = new Vector3(-30f, -0.4f, (numberOfRoads - 1) * roadLength);
 
     }
 }
