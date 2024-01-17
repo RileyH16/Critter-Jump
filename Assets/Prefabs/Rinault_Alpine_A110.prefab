@@ -44,6 +44,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6280408662620109427}
+  - component: {fileID: 1450580253354651625}
   m_Layer: 0
   m_Name: wheel_RL_16
   m_TagString: Untagged
@@ -67,6 +68,18 @@ Transform:
   - {fileID: 6452007128218749292}
   m_Father: {fileID: 8676369267191984722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1450580253354651625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922270485428376551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1768990593451247790
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7610173333926633872}
+  - component: {fileID: 1621010846763792061}
   m_Layer: 0
   m_Name: wheel_FL_16
   m_TagString: Untagged
@@ -214,6 +228,18 @@ Transform:
   - {fileID: 8258094374507646646}
   m_Father: {fileID: 8676369267191984722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621010846763792061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936472976437159571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4316098216417666757
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +352,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2.42, y: 1.9, z: -8.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0707, y: 1.0707, z: 1.0707}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5721811228826600982}
@@ -352,8 +378,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.571065}
+  m_Center: {x: 2.276874e-16, y: 0, z: -0.024590326}
 --- !u!54 &2760512703170194099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -394,6 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 25
+  waitTime: 2
 --- !u!1 &5901551082637306328
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8674766658996931152}
+  - component: {fileID: 3987697941909768382}
   m_Layer: 0
   m_Name: wheel_RR_16
   m_TagString: Untagged
@@ -592,6 +620,18 @@ Transform:
   - {fileID: 5752376503576735955}
   m_Father: {fileID: 8676369267191984722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3987697941909768382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564905808073728719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8606468848067756297
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8081689011190431147}
+  - component: {fileID: 1010725939108656575}
   m_Layer: 0
   m_Name: wheel_FR_16
   m_TagString: Untagged
@@ -707,3 +748,15 @@ Transform:
   - {fileID: 3785660809971252972}
   m_Father: {fileID: 8676369267191984722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010725939108656575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8811456611537977679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -36,9 +36,9 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(-10, transform.position.y, transform.position.z);
         }
 
-        else if (transform.position.x >= 10)
+        else if (transform.position.x >= 8)
         {
-            transform.position = new Vector3(10, transform.position.y, transform.position.z);
+            transform.position = new Vector3(8, transform.position.y, transform.position.z);
         }
 
         else if (transform.position.z <= -24)

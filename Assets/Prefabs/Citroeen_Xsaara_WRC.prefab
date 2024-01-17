@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3483631934584667591}
+  - component: {fileID: 2545351690007619300}
   m_Layer: 0
   m_Name: wheel_FL_2
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 8955334187051481268}
   m_Father: {fileID: 8347193614218585787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2545351690007619300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709406123410835988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2498139687983287808
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4634308203683143861}
+  - component: {fileID: 3210613237601996745}
   m_Layer: 0
   m_Name: wheel_RL_2
   m_TagString: Untagged
@@ -147,6 +161,18 @@ Transform:
   - {fileID: 2369056543624952638}
   m_Father: {fileID: 8347193614218585787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3210613237601996745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868622589722868374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2922172078407055496
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7213201662541397299}
+  - component: {fileID: 8329355703187143351}
   m_Layer: 0
   m_Name: wheel_FR_2
   m_TagString: Untagged
@@ -329,6 +356,18 @@ Transform:
   - {fileID: 1809282698382265330}
   m_Father: {fileID: 8347193614218585787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8329355703187143351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054460053390652007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4806977130627821905
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +397,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -25.24, y: 1.9, z: -8.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0900403, y: 1.0900403, z: 1.0900403}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1115329328689028293}
@@ -384,8 +423,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.3951747}
+  m_Center: {x: 1.0056293e-16, y: 0, z: -0.0554235}
 --- !u!54 &-4834968248410258280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -426,6 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 25
+  waitTime: 2
 --- !u!1 &4835994060453461210
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6268378615781206666}
+  - component: {fileID: 8048728293976252094}
   m_Layer: 0
   m_Name: wheel_RR_2
   m_TagString: Untagged
@@ -458,6 +499,18 @@ Transform:
   - {fileID: 5172430217729885417}
   m_Father: {fileID: 8347193614218585787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8048728293976252094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4835994060453461210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5366276259635209186
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8551749297439076539}
+  - component: {fileID: 7820590224487421198}
   m_Layer: 0
   m_Name: wheel_FR_13
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 5541833566998078922}
   m_Father: {fileID: 3309181164258791432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7820590224487421198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213320966124436527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &782376943251041477
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1143685426651459957}
+  - component: {fileID: 6928964144571660663}
   m_Layer: 0
   m_Name: wheel_FL_13
   m_TagString: Untagged
@@ -64,6 +78,18 @@ Transform:
   - {fileID: 1857757492861443213}
   m_Father: {fileID: 3309181164258791432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6928964144571660663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782376943251041477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &790288770458938852
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7838501475933398877}
+  - component: {fileID: 8378690404926141028}
   m_Layer: 0
   m_Name: wheel_RR_13
   m_TagString: Untagged
@@ -214,6 +241,18 @@ Transform:
   - {fileID: 4038730132338078651}
   m_Father: {fileID: 3309181164258791432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8378690404926141028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276257730412040373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5447455749894943315
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6273149304907576945}
+  - component: {fileID: 2160571020466697772}
   m_Layer: 0
   m_Name: wheel_RL_13
   m_TagString: Untagged
@@ -361,6 +401,18 @@ Transform:
   - {fileID: 4297282916150284208}
   m_Father: {fileID: 3309181164258791432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2160571020466697772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657721564514034885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5776324910802482978
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +608,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 7.388034, y: -0.0000009536743, z: -25.318794}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1414, y: 1.1414, z: 1.1414}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7515688011860159322}
@@ -623,8 +675,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.1370885}
+  m_Center: {x: -1.6497253e-16, y: 0, z: 0.07560609}
 --- !u!1 &7861402802034355932
 GameObject:
   m_ObjectHideFlags: 0

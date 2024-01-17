@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6388426975215557410}
+  - component: {fileID: 1064208308404989518}
   m_Layer: 0
   m_Name: wheel_RR_14
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 2656776842611207620}
   m_Father: {fileID: 7618283863409645723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064208308404989518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223529512640857794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &456492361027581039
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5954534538645509984}
+  - component: {fileID: 8434369732437589219}
   m_Layer: 0
   m_Name: wheel_FR_14
   m_TagString: Untagged
@@ -64,6 +78,18 @@ Transform:
   - {fileID: 5217937531853484400}
   m_Father: {fileID: 7618283863409645723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8434369732437589219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456492361027581039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &841219261254684181
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6439885136301052249}
+  - component: {fileID: 4325967958446258848}
   m_Layer: 0
   m_Name: wheel_FL_14
   m_TagString: Untagged
@@ -131,6 +158,18 @@ Transform:
   - {fileID: 5138671632731159349}
   m_Father: {fileID: 7618283863409645723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4325967958446258848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999375387974823382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2970221243145192058
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819986964024951932}
+  - component: {fileID: 7326139125607605911}
   m_Layer: 0
   m_Name: wheel_RL_14
   m_TagString: Untagged
@@ -361,6 +401,18 @@ Transform:
   - {fileID: 28305752769254650}
   m_Father: {fileID: 7618283863409645723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7326139125607605911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034666454561742737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5750849705317509639
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +525,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -34.83, y: 1.9, z: -8.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0900403, y: 1.0900403, z: 1.0900403}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 132836271715217462}
@@ -499,8 +551,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.6944597}
+  m_Center: {x: -2.6968476e-16, y: 0, z: -0.07329704}
 --- !u!54 &1818736065473788376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -541,6 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 25
+  waitTime: 2
 --- !u!1 &7130422531558949054
 GameObject:
   m_ObjectHideFlags: 0

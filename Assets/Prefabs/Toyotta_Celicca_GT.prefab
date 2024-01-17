@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3580773233199085098}
+  - component: {fileID: 3947514022310707576}
   m_Layer: 0
   m_Name: wheel_FR_19
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 6227687879859970656}
   m_Father: {fileID: 5121727538123367513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3947514022310707576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921643722982336070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1563654468199206281
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4788472865945434504}
+  - component: {fileID: 3049074335653444938}
   m_Layer: 0
   m_Name: wheel_FL_19
   m_TagString: Untagged
@@ -179,6 +193,18 @@ Transform:
   - {fileID: 6493907139341977233}
   m_Father: {fileID: 5121727538123367513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3049074335653444938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818479276161180276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4808238751460401466
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +234,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 10.49, y: 1.9, z: -8.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1326, y: 1.1326, z: 1.1326}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6014555758044891233}
@@ -234,8 +260,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 3.651036}
+  m_Center: {x: -4.6529044e-16, y: 0, z: -0.12635301}
 --- !u!54 &-7471250005310788403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -276,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 25
+  waitTime: 2
 --- !u!1 &4889106104794027364
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5539071112276296895}
+  - component: {fileID: 8505217173628844428}
   m_Layer: 0
   m_Name: wheel_RR_19
   m_TagString: Untagged
@@ -308,6 +336,18 @@ Transform:
   - {fileID: 3162629547276877230}
   m_Father: {fileID: 5121727538123367513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8505217173628844428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889106104794027364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6867153721606468437
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,6 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303906453534657245}
+  - component: {fileID: 912681400856844884}
   m_Layer: 0
   m_Name: wheel_RL_19
   m_TagString: Untagged
@@ -541,6 +582,18 @@ Transform:
   - {fileID: 6569387440295972232}
   m_Father: {fileID: 5121727538123367513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912681400856844884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8298663633815438383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c660a0551001874ba3cd1f3c7b06832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8370616658692409813
 GameObject:
   m_ObjectHideFlags: 0
