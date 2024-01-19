@@ -8,10 +8,11 @@ public class CarScript : MonoBehaviour
 
     public float speedX = 50.0f;
     private Rigidbody playerBody;
-    private float rightBound = 40.0f;
-    private float leftBound = -40.0f;
+    private float rightBound = 70.0f;
+    private float leftBound = -70.0f;
     public float waitTime = 2f;
     private bool gameOver = false;
+    private bool startCoroutine = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +35,12 @@ public class CarScript : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (gameOver == true)
+        if (gameOver == true && startCoroutine == false)
         {
 
             Debug.Log("NEXT SCENE");
             StartCoroutine(Wait());
+            startCoroutine = true;
         }
     }
 
@@ -58,9 +60,11 @@ public class CarScript : MonoBehaviour
     }
 
     IEnumerator Wait()
-    {           
-        yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+    {
+        Debug.Log("working");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(2);
+        Debug.Log("working 2");
     }
+
 }

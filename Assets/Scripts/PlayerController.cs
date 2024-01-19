@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public PlayerController playerController;
     public Dead dead;
     public bool canMove;
+    private float horizontal, vertical;
+    
     
     void Start()
     {
@@ -50,10 +53,8 @@ public class PlayerController : MonoBehaviour
 
     void ControllPlayer()
     {
-        float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        float moveVertical = Input.GetAxisRaw("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        
+        Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
 
         if (movement != Vector3.zero)
         {
@@ -68,5 +69,16 @@ public class PlayerController : MonoBehaviour
 
     }
 
-   
+   public void OnMove(InputValue value)
+    {
+        horizontal = value.Get<Vector2>().x;
+        vertical = value.Get<Vector2>().y;
+    }
+
+    public void MoveInput(Vector2 input)
+    {
+        
+        horizontal = input.normalized.x;
+        vertical = input.normalized.y;
+    }
 }
