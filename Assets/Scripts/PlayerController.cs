@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     private float horizontal, vertical;
     
-    
+
+
     void Start()
     {
         canMove = true;
@@ -48,12 +49,11 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -24);
         }
-
     }
 
     void ControllPlayer()
     {
-        
+
         Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
 
         if (movement != Vector3.zero)
@@ -61,7 +61,8 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
             anim.SetInteger("Walk", 1);
         }
-        else {
+        else
+        {
             anim.SetInteger("Walk", 0);
         }
 
@@ -69,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-   public void OnMove(InputValue value)
+    public void OnMove(InputValue value)
     {
         horizontal = value.Get<Vector2>().x;
         vertical = value.Get<Vector2>().y;
@@ -77,8 +78,9 @@ public class PlayerController : MonoBehaviour
 
     public void MoveInput(Vector2 input)
     {
-        
+
         horizontal = input.normalized.x;
         vertical = input.normalized.y;
     }
+
 }

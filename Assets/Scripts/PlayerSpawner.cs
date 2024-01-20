@@ -7,6 +7,7 @@ public class PlayerSpawner : MonoBehaviour
 
     public FollowPlayer followPlayer;
     public UICanvasControllerInput input;
+    
 
     private void Start()
     {
@@ -15,5 +16,5 @@ public class PlayerSpawner : MonoBehaviour
         input.starterAssetsInputs = player.GetComponent<PlayerController>();
     }
 
-    
-}
+ 
+}      

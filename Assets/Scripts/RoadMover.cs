@@ -17,5 +17,8 @@ public class RoadMover : MonoBehaviour
     {
         if(other.CompareTag("Player"))
             roadManager.ReplaceRoad(transform);
+
+        if (other.CompareTag("Player"))
+            ScoreManager.instance.AddPoint();
     }
 }
