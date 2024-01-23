@@ -11,7 +11,7 @@ public class PlayerSpawner : MonoBehaviour
 
     private void Start()
     {
-        GameObject player = Instantiate(GameManager.instance.currentCharacter.prefab, transform.position, Quaternion.identity);
+        GameObject player = Instantiate(GameManager.instance.currentCharacter.prefab, transform.position, Quaternion.identity, transform);
         followPlayer.player = player.transform;
         input.starterAssetsInputs = player.GetComponent<PlayerController>();
     }

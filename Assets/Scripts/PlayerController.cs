@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+
         canMove = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -49,6 +50,8 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, -24);
         }
+        
+       
     }
 
     void ControllPlayer()
