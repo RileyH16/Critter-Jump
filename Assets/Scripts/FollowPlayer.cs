@@ -27,7 +27,7 @@ public class FollowPlayer : MonoBehaviour
         if (player != null && isFollow == true)
         {
             
-            transform.position = Vector3.Lerp(transform.position, player.transform.position + new Vector3(0, 11f, -7.5f), 0.2f);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(0, 0, player.transform.position.z) + new Vector3(0, 11f, -7.5f), 0.2f);
             transform.rotation = Quaternion.Euler(new Vector3(50, 0, 0));
 
             if (player.transform.position.z < maxpZ-0.2f)

@@ -26,7 +26,7 @@ public class RoadManager : MonoBehaviour
         {
             
             GameObject roadPrefab = roadPrefabs[Random.Range(0, roadPrefabs.Length)];
-            GameObject road = Instantiate(roadPrefab, new Vector3(-30, -0.4f, i * roadLength), roadPrefab.transform.rotation);
+            GameObject road = Instantiate(roadPrefab, new Vector3(-30, -0.48f, i * roadLength), roadPrefab.transform.rotation);
             roadInstances.Add(road);
 
         }
@@ -40,7 +40,7 @@ public class RoadManager : MonoBehaviour
         numberOfRoads++;
         // Destroy the oldest road
         GameObject oldRoad = roadInstances[0];
-        road.localPosition = new Vector3(-30f, -0.4f, (numberOfRoads - 1) * roadLength);
+        road.localPosition = new Vector3(-30f, -0.48f, (numberOfRoads - 1) * roadLength);
 
     }
 }

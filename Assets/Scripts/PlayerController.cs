@@ -14,12 +14,13 @@ public class PlayerController : MonoBehaviour
     public Dead dead;
     public bool canMove;
     private float horizontal, vertical;
+    public GameObject myCamera;
     
 
 
     void Start()
     {
-
+        myCamera = Camera.main.gameObject;
         canMove = true;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -46,10 +47,12 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(8, transform.position.y, transform.position.z);
         }
 
-        else if (transform.position.z <= -24)
+        else if (transform.position.z <= myCamera.transform.position.z + 2.5f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -24);
+            transform.position = new Vector3(transform.position.x, transform.position.y, myCamera.transform.position.z + 2.5f);
         }
+        
+       
         
        
     }
