@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     private static AudioManager instance;
 
-    private static AudioManager Instance { get { return instance; } }
+    public static AudioManager Instance { get { return instance; } }
 
     private void Awake()
     {

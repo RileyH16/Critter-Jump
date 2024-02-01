@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CarScript : MonoBehaviour
 {
-
+    AudioSource hornHonk;
     public float speedX = 50.0f;
     private Rigidbody playerBody;
     private float rightBound = 70.0f;
@@ -17,7 +17,7 @@ public class CarScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        GetComponent <AudioSource> ();
     }
 
     // Update is called once per frame
@@ -49,6 +49,7 @@ public class CarScript : MonoBehaviour
         // When collide with player, flatten it!
         if (other.gameObject.tag == "Player")
         {
+            
             Vector3 scale = other.gameObject.transform.localScale;
             other.gameObject.transform.localScale = new Vector3(scale.x, scale.y * 0.1f, scale.z);
             Debug.Log("GameOver");
