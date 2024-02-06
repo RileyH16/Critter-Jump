@@ -15,11 +15,16 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
     private float horizontal, vertical;
     public GameObject myCamera;
+
+    public AudioSource splatSound;
+    public AudioSource hornSound;
     
 
 
     void Start()
     {
+        splatSound.volume = AudioManager.Instance.sfxVolume;
+        hornSound.volume = AudioManager.Instance.sfxVolume;
         myCamera = Camera.main.gameObject;
         canMove = true;
         anim = GetComponent<Animator>();
@@ -89,4 +94,22 @@ public class PlayerController : MonoBehaviour
         vertical = input.normalized.y;
     }
 
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            splatSound.Play();
+        }
+
+       
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Horn")
+        {
+            hornSound.Play();
+        }
+    }
 }

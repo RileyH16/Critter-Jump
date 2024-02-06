@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance { get { return instance; } }
 
+    public float sfxVolume;
+
     private void Awake()
     {
         if (instance != null && instance!= this)
