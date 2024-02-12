@@ -185,37 +185,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6202140261493026061, guid: cf722a0ebadb79049b887fbf149c8ebb, type: 3}
   m_PrefabInstance: {fileID: 110478407}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &252562372
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 252562373}
-  m_Layer: 0
-  m_Name: Game Mananger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &252562373
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 252562372}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -185.12357, y: -347.47635, z: 388.0593}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &318683982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2016,6 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1507632654}
   highscoreText: {fileID: 756612751}
+  highscore: 0
 --- !u!114 &2052603942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2168,7 +2138,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 252562373}
   - {fileID: 823954365}
   - {fileID: 1706670504}
   - {fileID: 1119654837}

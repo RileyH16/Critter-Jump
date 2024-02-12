@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public CharacterSelect[] characters;
     public CharacterSelect currentCharacter;
+    public ScoreManager scoreManager;
 
     private void Awake()
     {
@@ -33,5 +34,10 @@ public class GameManager : MonoBehaviour
     public void SetCharacter(CharacterSelect character)
     {
         currentCharacter = character;
+    }
+
+    public void SavePlayer()
+    {
+        scoreManager.SavePlayer();
     }
 }

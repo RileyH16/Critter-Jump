@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     public Text highscoreText;
 
     int score = 0;
-    int highscore = 0;
+    public int highscore = 0;
 
     private void Awake()
     {
@@ -24,6 +24,8 @@ public class ScoreManager : MonoBehaviour
     {
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = "SCORE: " + score.ToString();
+        
+        LoadPlayer();
         highscoreText.text = "HIGHSCORE: " + highscore.ToString();
     }
 
@@ -33,5 +35,33 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = "SCORE: " + score.ToString();
         if (highscore < score)
             PlayerPrefs.SetInt("highscore", score);
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        if(data != null)
+        {
+            highscore = data.highscore;
+
+        }
+        else { highscore = 0; }
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        SavePlayer();
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        SavePlayer();
     }
 }

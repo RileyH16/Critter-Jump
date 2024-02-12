@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Dead : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
     public Text pointsText;
 

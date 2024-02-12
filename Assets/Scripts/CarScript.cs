@@ -38,7 +38,6 @@ public class CarScript : MonoBehaviour
         if (gameOver == true && startCoroutine == false)
         {
 
-            Debug.Log("NEXT SCENE");
             StartCoroutine(Wait());
             startCoroutine = true;
         }
@@ -52,20 +51,19 @@ public class CarScript : MonoBehaviour
             
             Vector3 scale = other.gameObject.transform.localScale;
             other.gameObject.transform.localScale = new Vector3(scale.x, scale.y * 0.1f, scale.z);
-            Debug.Log("GameOver");
             gameOver = true;
             PlayerController moveScript;
             moveScript = other.gameObject.GetComponent<PlayerController>();
             moveScript.canMove = false;
+            GameObject.Find("Canvas").GetComponent<ScoreManager>().SavePlayer();
+            
         }
     }
 
     IEnumerator Wait()
     {
-        Debug.Log("working");
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(2);
-        Debug.Log("working 2");
     }
 
 }

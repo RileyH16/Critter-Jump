@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     Rigidbody rb;
     public PlayerController playerController;
-    public Dead dead;
+    public GameOver dead;
     public bool canMove;
     private float horizontal, vertical;
     public GameObject myCamera;

@@ -33,7 +33,6 @@ public class FollowPlayer : MonoBehaviour
             if (player.transform.position.z < maxpZ-0.2f)
             {
                 isFollow = false;
-                Debug.Log("should work");
             }
 
             
@@ -42,7 +41,6 @@ public class FollowPlayer : MonoBehaviour
         {
             isFollow = true;
             maxpZ = player.transform.position.z;
-            Debug.Log("should work too");
         }
     }
 }
