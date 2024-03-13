@@ -52,7 +52,6 @@ PlayerSettings:
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
-  unsupportedMSAAFallback: 0
   m_SpriteBatchVertexThreshold: 300
   m_MTRendering: 1
   mipStripping: 0
@@ -80,7 +79,6 @@ PlayerSettings:
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
-  androidAutoRotationBehavior: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -92,7 +90,6 @@ PlayerSettings:
   hideHomeButton: 0
   submitAnalytics: 1
   usePlayerLog: 1
-  dedicatedServerOptimizations: 0
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
   useFlipModelSwapchain: 1
@@ -132,7 +129,6 @@ PlayerSettings:
   switchNVNMaxPublicTextureIDCount: 0
   switchNVNMaxPublicSamplerIDCount: 0
   switchNVNGraphicsFirmwareMemory: 32
-  switchMaxWorkerMultiple: 8
   stadiaPresentMode: 0
   stadiaTargetFramerate: 0
   vulkanNumSwapchainBuffers: 3
@@ -153,7 +149,6 @@ PlayerSettings:
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
   enableOpenGLProfilerGPURecorders: 1
-  allowHDRDisplaySupport: 0
   useHDRDisplay: 0
   hdrBitDepth: 0
   m_ColorGamuts: 00000000
@@ -642,7 +637,7 @@ PlayerSettings:
   switchSocketConcurrencyLimit: 14
   switchScreenResolutionBehavior: 2
   switchUseCPUProfiler: 0
-  switchEnableFileSystemTrace: 0
+  switchUseGOLDLinker: 0
   switchLTOSetting: 0
   switchApplicationID: 0x01004b9000490000
   switchNSODependencies: 
@@ -772,6 +767,7 @@ PlayerSettings:
   switchSocketBufferEfficiency: 4
   switchSocketInitializeEnabled: 1
   switchNetworkInterfaceManagerInitializeEnabled: 1
+  switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 1
   switchUseLegacyFmodPriorities: 0
   switchUseMicroSleepForYield: 1
@@ -916,13 +912,31 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: CritterJump
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: GCTC
+  metroCertificateIssuer: GCTC
+  metroCertificateNotAfter: 00c3403c8594db01
   metroApplicationDescription: Critter Jump
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/Sprites/CDIcon 50.png
+    65661: Assets/Sprites/CDIcon 63.png
+    65686: Assets/Sprites/CDIcon 75.png
+    65736: Assets/Sprites/CDIcon 100.png
+    65936: Assets/Sprites/CDIcon 200.png
+    131172: Assets/Sprites/CDIcon 620x300.png
+    131272: Assets/Sprites/CDIcon 1240x600.png
+    2031640: Assets/Sprites/CDIcon 24.png
+    2031716: Assets/Sprites/CDIcon 44.png
+    2031816: Assets/Sprites/CDIcon 88.png
+    2097252: Assets/Sprites/CDIcon 71.png
+    2097352: Assets/Sprites/CDIcon 142.png
+    2162788: Assets/Sprites/CDIcon 150.png
+    2162888: Assets/Sprites/CDIcon 300.png
+    2228324: Assets/Sprites/CDIcon 310.png
+    2228424: Assets/Sprites/CDIcon 620.png
+    2293860: Assets/Sprites/CDIcon 310x150.png
+    2293960: Assets/Sprites/CDIcon 620x300.png
   metroTileShortName: Critter Jump
   metroTileShowName: 0
   metroMediumTileShowName: 0
