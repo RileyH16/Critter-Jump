@@ -159,6 +159,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.GCTC.CritterDash
+    Standalone: com.GCTC.CritterDash
     iPhone: com.GCTC.CritterDash
   buildNumber:
     Standalone: 0
@@ -910,14 +911,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: CritterJump
+  metroPackageName: CritterDash
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: GCTC
   metroCertificateIssuer: GCTC
   metroCertificateNotAfter: 00c3403c8594db01
-  metroApplicationDescription: Critter Jump
+  metroApplicationDescription: Critter Dash
   wsaImages:
     65636: Assets/Sprites/CDIcon 50.png
     65661: Assets/Sprites/CDIcon 63.png
