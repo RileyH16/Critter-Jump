@@ -112,4 +112,10 @@ public class PlayerController : MonoBehaviour
             hornSound.Play();
         }
     }
+
+    public virtual void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, transform.forward * 50f);
+    }
 }

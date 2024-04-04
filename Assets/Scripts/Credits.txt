@@ -1,5 +1,12 @@
-Rally Cars - ASH DEV
-Roads - GEEKO
-Animal Players and Trees - Voxel Guy
+Assets:
+-Ash Dev: Cars
+-Geeko: Roads
+-Voxel Guy: Player Models
+
+Music/SFX:
+-Music: Financial Obligations conducted by Philip Milman.
+-Car Horn Sound Effect: Car Features.
+-Splat Sound Effects: Youtube Sound Effects.
 
 Game Testers - Ashton Null, Jefferson Gutierez, Zander Mcvey, Jakob Cook
+C:\Users\RileyHutton\OneDrive - Green Country Technology Center\Desktop\001 Critter Jump\Critter Jump\Assets\Scripts\Credits.txt
